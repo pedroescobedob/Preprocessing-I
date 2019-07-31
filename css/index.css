@@ -1,1 +1,356 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 900px;
+  margin: auto;
+  
+}
+
+nav{
+	font-size: .9em;
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+}
+
+nav a{
+	display: inline-block;
+	padding: 0 20px;
+	color: grey;
+	text-decoration: none;
+}
+
+
+
+nav .navigation-links{
+	align-items: flex-end;
+}
+
+.logo{
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+	
+}
+
+body{
+	width: 800px;
+	margin: auto;
+}
+
+h1{
+	font-size: 4.5em;
+	text-align: center;
+	margin-bottom: .25em;
+}
+
+h2 {
+	font-weight: solid;
+	font-size: 1.5em;
+}
+
+* {
+	text-decoration: none;
+}
+
+header{
+	max-width: 100%;
+	border-bottom: 1px solid black;
+	margin: 0 auto;
+}
+
+.headerRight{
+	margin: 0;
+	display: inline-block;
+	width: 40%;
+	height: 400px;
+	padding: 60px;
+	align-content: center;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.getStarted{
+	display: block;
+	width: 100px;
+	height: 35px;
+	margin: 0 auto;
+	background: white;
+	border: 1px solid black;
+	font-size: 1.5ex;
+}
+
+.headerLeft{
+  width: 50%;
+	display: inline-block;
+  vertical-align: bottom;
+	height: 400px;
+	justify-content: space-between;
+  align-content: center;
+  object-fit: scale-down;
+}
+
+img.profile{
+  padding-top: 40px;
+  width: 60%;
+  height: 70%;
+}
+
+.header-text{
+  padding: 30px;
+}
+
+.contentBottom{
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 35px 5px;
+}
+
+.twoColumns{
+	margin: 0 auto;
+	display: inline-block;
+	max-width: 48%;
+}
+
+.contact{
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 35px 0px;
+	border-top: 1px solid black;
+}
+
+footer{
+	text-align: center;
+	padding: 0px 0px 25px 0px;
+}
+
+
+@media(max-width: 800px){
+    nav a{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        display: inline-block;
+        flex-direction: row;
+    }
+    .logo{
+      flex-direction: column-reverse;
+      padding-bottom: 40px;
+    }
+
+    .headerLeft{
+        width: 100%;
+        
+        position: absolute;
+    }
+
+    .headerRight{
+      width: 100%;
+        
+      position: absolute;
+    }
+
+    body{
+        width: 100%;
+        padding:20px;
+    }
+    .contentBottom{
+        width: 100%;
+        margin: 0 auto;
+        padding: 35px 5px;
+    }
+    .twoColumns{
+        margin: 0 auto;
+        display: inline-block;
+        max-width: 47%;
+    }
+    .middle-img{
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    
+    .threeColumns{
+        display: inline-block;
+        width: 32%;
+        padding: 35px 0px;
+    }
+
+}
+
+@media(max-width: 500px){
+    nav{
+        align-content: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    nav a{
+        width: 100%;
+        flex-direction: column;
+        align-content: center;
+        text-align: center;
+        padding: 20px 0;
+        margin: 0 auto;
+    }
+    body{
+        margin: 0 auto;
+        padding: 0;
+    }
+    .twoColumns{
+        margin: 0 auto;
+        display: inline-block;
+        max-width: 100%;
+        padding: 10px 20px;
+    }
+
+    .threeColumns{
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 30px;
+    }
+
+    .navigation-links{
+        padding: 0;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .contact{
+        padding: 20px;
+    }
+}
